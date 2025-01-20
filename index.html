@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./jslibraries/bootstrap/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div id="content-block"></div>
+    <div class="Login" id="login-block">
+        <div id="frmLogin" class="login-page">
+            <div class="login-box">
+                <div class="login-logo">
+                    <span id="frmLogin-First">
+                        <b>Quản trị </b>Petrolimex
+                    </span>
+                </div>
+                <div class="card">
+                    <div class="card-body login-card-body">
+                        <p class="login-box-msg" id="frmLogin-CompanyName">
+                            <b>Tập đoàn xăng dầu Petrolimex</b>
+                        </p>
+                        <form>
+                            <div class="input-group mb-3">
+                                <input id="txtUserName" type="text" class="form-control" placeholder="Tên đăng nhập" />
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <span class="fas fa-user"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input id="txtPassword" type="password" class="form-control" placeholder="Mật khẩu" />
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <span class="fas fa-lock"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-11">
+                                    <button class="btn btn-primary btn-flat float-right" type="button"
+                                        onclick="loginClickAction()">
+                                        Đăng nhập
+                                    </button>
+                                    <button id="btnOnlyViewLogin" style="margin-right: 3; display: none"
+                                        class="btn btn-danger btn-flat float-right" type="button"> Chỉ xem </button>
+                                </div>
+                            </div>
+                        </form>
+                        <b id="lblError" class="label label-danger" style="color: red "></b>
+                        <br />
+                        <b id="TemperateData" class="label label-danger" style="color: red"></b>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./jslibraries/bootstrap/bootstrap.min.js"></script>
+    <script src="./jslibraries/jquery.min.js"></script>
+    <script src="./jslibraries/datatables/jquery.dataTables.js"></script>
+    <script src="./jslibraries/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</body>
+
+</html>
